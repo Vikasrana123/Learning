@@ -3,6 +3,16 @@
  *****This pattern is crucial for developing flexible, maintainable, and modular code, especially when multiple algorithms 
  might be applicable to solve a problem*****
 
+ Real World Example : 
+Navigation app:
+ Choosing between different route calculation methods (shortest distance, fastest time, scenic route) based on user preference. 
+Image processing:
+ Selecting different image compression algorithms depending on the desired quality and file size. 
+Text editor:
+ Applying different text formatting options like bold, italic, or underline based on user selection. 
+Sorting algorithms:
+ Implementing different sorting algorithms (bubble sort, insertion sort, merge sort) and choosing the most suitable one based on the data set. 
+
 */
 
 // Strategy Interface

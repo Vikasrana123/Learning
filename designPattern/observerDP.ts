@@ -5,6 +5,24 @@ happen to the object they’re observing.
 
 The Observer pattern is a behavioral design pattern that establishes a one-to-many dependency between objects, 
 so that when one object changes its state, all its dependents (observers) are automatically notified and updated. 
+
+Subject (Observable):
+
+The subject is responsible for maintaining its state and notifying observers of changes.
+It doesn't concern itself with what the observers do with the information.
+
+Observer:
+
+Each observer is responsible for responding to notifications from the subject and handling its own behavior.
+Observers don't manage the subject's state; they just act on the updates they receive.
+
+Advantages
+1. Instance-Specific Behavior:
+2. Reusability and Extensibility:
+3. Encapsulation: Using the class directly could lead to tighter coupling and less modular code.
+4. Object-Oriented Principles:
+
+
  
  ***/
 
@@ -14,7 +32,7 @@ interface Subscriber {
     updateEmail(channelName: string, title: string): any
 }
 
-// Concrete class of Subscriber
+// Concrete class of Subscriber (Observer)
 class YoutubeSubscriber implements Subscriber {
     subscriberName: string
     constructor(subscriberName: string) {
