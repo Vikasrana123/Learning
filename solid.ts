@@ -1,6 +1,9 @@
 // SOLID Principle
 
 /*** Single Responsibilty
+ * What is LLD?
+    Low-Level Design (LLD) focuses on the detailed internal working of individual modules, components, or services within a larger system. 
+    It takes the high-level architecture (HLD) and breaks it down into concrete, actionable specifications for developers to implement.
  * 
  * Definition: A class should have only one reason to change, meaning it should have only one primary responsibility
  * 
@@ -228,6 +231,7 @@ reminderWithPostgreSql.remindPassword();
 // Connecting to a PostgreSQL database...
 // Finding password and sending a reminder...```
 
-//By adhering to the Dependency Inversion Principle, our `PasswordReminder` class is now completely decoupled from the specific database implementation. This makes our system more flexible, easier to maintain, and significantly easier to test, as we could now create a `MockDatabaseConnection` for our unit tests.
+//By adhering to the Dependency Inversion Principle, our `PasswordReminder` class is now completely decoupled from the specific database implementation. 
+// This makes our system more flexible, easier to maintain, and significantly easier to test, as we could now create a `MockDatabaseConnection` for our unit tests.
 
 /** End Dependency Inversion Principle */

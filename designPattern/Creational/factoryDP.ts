@@ -6,6 +6,8 @@
 
  * Factory pattern removes the instantiation of actual implementation classes from client code. Factory pattern makes our code more 
    robust, less coupled and easy to extend. 
+
+   You create a separate class—a “factory”—whose only job is to centralize and encapsulate object creation.
  */
 
 interface HairLoss {
